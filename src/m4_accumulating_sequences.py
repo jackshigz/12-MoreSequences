@@ -80,7 +80,7 @@ def make_simple_list(m, n):
 def run_test_make_simple_string():
     """ Tests the   make_simple_string    function. """
     # ------------------------------------------------------------------
-    # TODO: 4. Implement this TEST function.
+    # DONE: 4. Implement this TEST function.
     #   It TESTS the  make_simple_string  function defined below.
     #   Include at least **   2   ** tests.
     #
@@ -112,6 +112,10 @@ def make_simple_string(m, n):
       :type m: int
       :type n: int
     """
+    num = list()
+    for k in range(n-m+1):
+        num.append(m+k,"-")
+    return num
     # ------------------------------------------------------------------
     # TODO: 5. Implement and test this function.
     #   Note that you should write its TEST function first (above).
